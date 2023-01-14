@@ -17,7 +17,7 @@ import {
 
 const Cart = () => {
   const dispatch = useDispatch();
-  const {products, quantity, total} = useSelector(state => state.cart);
+  const {products, total} = useSelector(state => state.cart);
   const [open, setOpen] = useState(false);
   const [cash, setCash] = useState(false);
   const amount = total;
@@ -104,8 +104,8 @@ const Cart = () => {
             <th>Total</th>
           </tr>
           </tbody>
-          {products.map(product => (
-            <tbody>
+          {products.map((product, i) => (
+            <tbody key={i}>
             <tr className={styles.tr} key={product._id}>
             <td>
               <div className={styles.imgContainer}>
