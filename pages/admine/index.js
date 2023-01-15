@@ -107,8 +107,8 @@ export const getServerSideProps = async (context) => {
       }
     }
   }
-  const productRres = await axios.get(`${BASE_URL}/api/products`);
-  const orderRes = await axios.get(`${BASE_URL}/api/order`);
+  const productRres = await axios.get(`https://ordering-pizza-app.vercel.app/api/products`);
+  const orderRes = await axios.get(`https://ordering-pizza-app.vercel.app/api/order`);
 
   return{
     props: {

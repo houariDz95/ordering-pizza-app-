@@ -1,1 +1,1 @@
-export const BASE_URL = "https://ordering-pizza-mqzlh7ebe-houaridz95.vercel.app"
+export const BASE_URL = "http://localhost:3000"

@@ -10,10 +10,10 @@ const Login = () => {
   const router = useRouter()
   const handelClick = async() => {
     try{
-      await axios.post(`${BASE_URL}/api/login`, {username, password});
+      await axios.post(`${BASE_URL}/auth/login`, {username, password});
       router.push('/admine')
     }catch(err){
-      console.log(err);
+      console.log(err)
       setError(true);
     }
   }

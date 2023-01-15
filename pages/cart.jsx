@@ -17,6 +17,7 @@ import {
 
 const Cart = () => {
   const dispatch = useDispatch();
+  console.log(BASE_URL)
   const {products, total} = useSelector(state => state.cart);
   const [open, setOpen] = useState(false);
   const [cash, setCash] = useState(false);
